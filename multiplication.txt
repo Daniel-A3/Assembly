@@ -1,0 +1,28 @@
+        INP
+        STA num1
+        INP 
+        STA num2
+        INP
+        STA count
+        INP
+        STA one
+        LDA num2
+        STA answer
+loop    LDA num1
+        SUB count
+        BRZ end
+        LDA answer
+        ADD num2
+        STA answer
+        LDA count
+        ADD one
+        STA count
+        BRA loop
+end     LDA answer
+        OUT 
+        HLT
+one     DAT 95
+answer  DAT 96
+count   DAT 97
+num2    DAT 98
+num1    DAT 99
