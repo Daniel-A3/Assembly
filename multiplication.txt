@@ -1,11 +1,11 @@
         INP
-        STA num1
+        STA num1 // Any number you want to multiply
         INP 
-        STA num2
+        STA num2 // Any number you want to multiply
         INP
-        STA count
+        STA count // You must input 1
         INP
-        STA one
+        STA one // You must input 1
         LDA num2
         STA answer
 loop    LDA num1
